@@ -18,21 +18,35 @@ public class Valrin {
         // TODO code application logic here
 
     
-    double r,k;
         
-        String sk;
+         double p,h,imc;
+        
+        String sp,sh;
    
         
-        sr=JOptionPane.showInputDialog(null, "Peso do prato em quilos: ");
-       
+        sp=JOptionPane.showInputDialog(null, "Peso: ");
+        sh=JOptionPane.showInputDialog(null, "Altura: ");
        
         
-        k = Double.parseDouble(sk);
-       
-        r= 12.00 *k;
+        p = Double.parseDouble(sp);
+        h = Double.parseDouble(sh);
+
+        imc= p/(h*h);
      
-       
-      JOptionPane.showMessageDialog(null, "R$: "+r);
-       
+         if(imc >=40 ) {
+      JOptionPane.showMessageDialog(null, "Obeso mórbido!");}
+                  else if(imc < 40) {
+      JOptionPane.showMessageDialog(null, "Obeso moderado!");}
+                           else if(imc < 35) {
+      JOptionPane.showMessageDialog(null, "Obeso leve!");}
+         else if(imc < 30) {
+      JOptionPane.showMessageDialog(null, "Sobrepeso!");} 
+                                    else if(imc < 25) {
+      JOptionPane.showMessageDialog(null, "Peso normal!");}
+         else if(imc < 18.5) {
+      JOptionPane.showMessageDialog(null, "Abaixo do peso!");} 
+        
+        
     }
+    
 }
