@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+
+public class Valrin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+
+
+int v1,v2;
+        
+        String c1,c2,sv1,sv2;
+   
+        
+        c1=JOptionPane.showInputDialog(null, "Canditato A: ");
+        c2=JOptionPane.showInputDialog(null, "Canditato B: ");
+        sv1=JOptionPane.showInputDialog(null, "Canditato A(votos): ");
+        sv2=JOptionPane.showInputDialog(null, "Canditato B(votos): ");
+        
+      
+        v1 = Integer.parseInt(sv1); 
+        v2 = Integer.parseInt(sv2);
+  
+  
+      if(v1 > v2) {      
+             
+      JOptionPane.showMessageDialog(null, "VENCEDOR: "+"\n"+
+              c1+"( "+v1+" Votos)");}
+      else {
+        
+     JOptionPane.showMessageDialog(null, "VENCEDOR: "+"\n"+
+              c2+"( "+v2+" Votos)");}
+      
+                
+        
+    }
+    
+}
