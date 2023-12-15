@@ -1,0 +1,48 @@
+
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+public class Valrin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+int a;
+        
+        String sa;
+   
+        
+        sa=JOptionPane.showInputDialog(null, "Ano: ");
+      
+       
+        
+        a = Integer.parseInt(sa);
+  
+        
+      if(a%4==0) {
+             
+             
+             
+             
+      JOptionPane.showMessageDialog(null, "Ano Bissexto!");}
+      else {
+        
+     JOptionPane.showMessageDialog(null, "Ano Normal!");}
+      
+                
+        
+    }
+    
+}
