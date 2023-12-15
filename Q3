@@ -1,0 +1,35 @@
+         int i,d,p,des,des2;
+        
+        String si,sd;
+   
+        
+        si=JOptionPane.showInputDialog(null, "Idade: ");
+        sd=JOptionPane.showInputDialog(null, "Dia: ");
+       
+        
+        i = Integer.parseInt(si);
+        d = Integer.parseInt(sd);
+
+        
+      if(i < 14 && d ==3) {
+             
+                 p=3;
+             
+             
+      JOptionPane.showMessageDialog(null, "Preço: "+3+" R$");}
+      else if(i < 14 || i>=14 && d ==3) {
+           p=12;  
+      des= 50*p/100;
+      des2= p-des;
+             
+             
+      JOptionPane.showMessageDialog(null, "Preço: "+des2+" R$");} else {
+           p=12;  
+ 
+      JOptionPane.showMessageDialog(null, "Preço: "+p+" R$");}
+      
+                
+        
+    }
+    
+}
