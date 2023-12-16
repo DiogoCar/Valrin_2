@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+
+public class Valrin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+    double r,d,c,t;
+        
+        String sr,sd,sc;
+        
+        sr=JOptionPane.showInputDialog(null,"Valor inicial: ");
+        sd=JOptionPane.showInputDialog(null,"Debito: ");
+        sc=JOptionPane.showInputDialog(null,"Credito: ");
+        
+        r=Double.parseDouble(sr);
+        d=Double.parseDouble(sd);
+        c=Double.parseDouble(sc);
+        
+        
+        t=r-d+c;
+        
+        if(t>0){JOptionPane.showMessageDialog(null,"R$: "+t+" (Saldo positivo)");}
+        else if(t==0){JOptionPane.showMessageDialog(null,"(Saldo zero)");} else 
+        {JOptionPane.showMessageDialog(null,"R$: "+t+" (Saldo negativo)");}
+        
+    }
+    
+}
