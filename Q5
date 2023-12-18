@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package exercicio_fix;
+
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Discente
+ */
+
+public class Valrin {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+
+   double d,l,e;
+   String sd,sl;
+
+  sd=JOptionPane.showInputDialog(null,"Distancia(Km): ");
+    sl=JOptionPane.showInputDialog(null,"Combustivel(L): "); 
+    
+        d=Double.parseDouble(sd);
+   l=Double.parseDouble(sl);
+   
+   e=d/l;
+   
+   if(e>=15){JOptionPane.showMessageDialog(null,"O carro é econômico");} else 
+   {JOptionPane.showMessageDialog(null,"O carro não é econômico");}
+   
+   
+    }
+   
+}
